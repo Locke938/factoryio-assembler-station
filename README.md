@@ -2,50 +2,127 @@
 
 ## Overview
 
-This project implements an automated assembly station using Siemens PLC programming in TIA Portal and Factory I/O simulation.
+This project implements an automated assembly station using Siemens TIA Portal and Factory I/O.
 
-The system automatically assembles products by coordinating conveyors, sensors, and actuators according to a predefined sequence.
+The system automatically assembles products through the coordination of conveyors, pneumatic clamps, sensors, and a pick-and-place arm. An HMI interface was developed for monitoring system status and controlling production operations.
+
+This project was completed as part of the "Automation Devices and Systems" course at Ho Chi Minh City University of Technology.
+
+---
+
+## System Architecture
+
+```text
+Conveyor 1
+    ↓
+Detect Product
+    ↓
+Clamp Product
+    ↓
+Pick Product
+    ↓
+Move Arm
+    ↓
+Place Product
+    ↓
+Release Product
+    ↓
+Conveyor 2
+    ↓
+Finished Product Counter
+```
+
+---
+
+## Features
+
+- Automated assembly sequence
+- Conveyor control
+- Pneumatic clamp control
+- Pick-and-place arm operation
+- Product detection using sensors
+- Product counting
+- Start / Stop / Reset control
+- HMI monitoring interface
+
+---
 
 ## Technologies
 
 - Siemens TIA Portal
 - Ladder Logic (LAD)
 - Factory I/O
-- HMI
+- WinCC HMI
 
-## Main Functions
+---
 
-- Conveyor control
-- Product detection using sensors
-- Automatic assembly sequence
-- Actuator control
-- HMI monitoring and operation
+## Control Logic
 
-## System Workflow
+The PLC program was divided into independent functional modules:
 
-1. Detect incoming product.
-2. Stop conveyor at assembly position.
-3. Activate assembly actuator.
-4. Complete assembly process.
-5. Resume conveyor movement.
-6. Count finished products.
+- Conveyor 1 control
+- Conveyor 2 control
+- Clamp control
+- Vertical arm movement
+- Horizontal arm movement
+- Gripper control
+- Product counting
+- HMI communication
+
+The system uses interlock logic to ensure safe operation and prevent incorrect assembly sequences.
+
+---
+
+## HMI Functions
+
+The HMI interface provides:
+
+- Start button
+- Stop button
+- Reset counter button
+- System status indicator
+- Conveyor status indicators
+- Product counter display
+
+---
 
 ## Project Images
 
-### Overview
+### Factory I/O Overview
 
-![Overview](Images/overview.png)
+![System Overview](Images/Overview.png)
 
-### Runtime
+### HMI Interface
 
-![Runtime](Images/runtime.png)
+![HMI](Images/hmi-interface.png)
 
-### HMI
+### Ladder Logic
 
-![HMI](Images/hmi.png)
+![Ladder](Images/ladder-arm-control.png)
 
-## Project Information
+---
 
-This project was developed as part of the course "Automation Devices and Systems" at Ho Chi Minh City University of Technology.
+## Project Report
 
-The implementation was based on the Factory I/O Assembler Station scenario and programmed using Siemens TIA Portal.
+Detailed project documentation is available in:
+
+Report/BTL_TB_HTTD_L03_N3.pdf
+
+---
+
+## Demonstration Video
+
+Video demonstration:
+
+[Add YouTube Link Here]
+
+---
+
+## Future Improvements
+
+Several improvements were identified during project evaluation:
+
+- Replace timer-based positioning with limit sensors.
+- Add Manual Mode for maintenance and troubleshooting.
+- Upgrade pneumatic actuators to servo-based motion control.
+- Implement fault detection and alarm handling.
