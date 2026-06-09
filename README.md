@@ -47,13 +47,22 @@ Finished Product Counter
 
 ---
 
-## Technologies
+## Hardware & Software
 
-- Siemens TIA Portal
-- Ladder Logic (LAD)
-- Factory I/O
+### PLC Platform
+
+- Siemens S7-1200
+- TIA Portal V18
 - WinCC HMI
+- Factory I/O
 
+### Programming Language
+
+- Ladder Logic (LAD)
+
+### Simulation Environment
+
+- Factory I/O Assembler Station
 ---
 
 ## Control Logic
@@ -72,7 +81,22 @@ The PLC program was divided into independent functional modules:
 The system uses interlock logic to ensure safe operation and prevent incorrect assembly sequences.
 
 ---
+## My Contributions
 
+My primary responsibility in this team project was the development of the complete PLC control program in TIA Portal.
+
+Tasks performed:
+
+- Developed the entire Ladder Logic program.
+- Implemented conveyor control sequences.
+- Developed pneumatic clamp control logic.
+- Programmed pick-and-place arm movement logic.
+- Configured PLC tags and I/O mapping.
+- Implemented product counting functions.
+- Integrated PLC logic with Factory I/O simulation.
+- Tested and debugged system operation.
+
+---
 ## HMI Functions
 
 The HMI interface provides:
