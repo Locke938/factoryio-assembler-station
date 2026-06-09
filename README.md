@@ -99,7 +99,8 @@ The HMI interface provides:
 ### Ladder Logic
 
 ![Ladder](Images/ladder-arm-control.png)
-
+![Ladder](Images/ladder-conveyor1.png)
+![Ladder](Images/ladder-counter.png)
 ---
 
 ## Project Report
