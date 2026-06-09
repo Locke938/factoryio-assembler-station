@@ -111,6 +111,9 @@ The HMI interface provides:
 ---
 
 ## Project Images
+## I/O Mapping
+
+![I/O Mapping](Images/io-mapping.png)
 
 ### Factory I/O Overview
 
@@ -131,7 +134,7 @@ The HMI interface provides:
 
 Detailed project documentation is available in:
 
-Report/BTL_TB_HTTD_L03_N3.pdf
+[Project Report](Reports/BTL_TB_HTTD_L03_N3.pdf)
 
 ---
 
